@@ -1,0 +1,97 @@
+
+* {
+    box-sizing: border-box;
+}
+
+input[type=text], input[type=date], input[type=password] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+}
+
+label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+}
+
+button[type=submit]:disabled {
+    color: grey;
+    padding: 12px 20px;
+    border-radius: 4px;
+    float: right;
+}
+
+button[type=submit]:enabled, button[type=button] {
+    background-color: #2139f1;
+    color: white;
+    padding: 12px 20px;
+    border-radius: 4px;
+    float: right;
+}
+
+#currentUsers td {
+    border: 1px solid #f8e80a;
+    background-color: #fff897;
+    padding: 8px;
+}
+
+#currentUsers th {
+    padding: 8px;
+    text-align: left;
+    background-color: #fefe2f;
+    border: 1px solid #f8e80a;
+    color: black;
+}
+
+.login, .main, .createFlow, .deleteFlow {
+    border-radius: 25px;
+    background-color: #d5cfcf;
+    padding: 20px;
+    width: 700px;
+    min-height: 400px;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header {
+    background-color: #1216e9;
+    color: #ffffff;
+    padding: 10px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+.col-25 button {
+    float: right;
+    width: 100%;
+}
+
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25,
+    .col-75,
+    input[type=submit] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
